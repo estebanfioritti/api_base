@@ -1,0 +1,76 @@
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:10:30: value %% is not a member of String
+[error]     "com.github.nscala-time" %% "nscala-time" % "2.18.0",
+[error]                              ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:11:19: value %% is not a member of String
+[error]     "com.lihaoyi" %% "pprint" % "0.5.3",
+[error]                   ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:12:25: value %% is not a member of String
+[error]     "com.typesafe.akka" %% "akka-http" % Versions.akkaHttp,
+[error]                         ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:13:25: value %% is not a member of String
+[error]     "com.typesafe.akka" %% "akka-actor" % Versions.akka,
+[error]                         ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:14:25: value %% is not a member of String
+[error]     "com.typesafe.akka" %% "akka-stream" % Versions.akka, // Explicit dependency due to: https://bit.ly/akka-http-25
+[error]                         ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:15:25: value %% is not a member of String
+[error]     "com.typesafe.akka" %% "akka-http-spray-json" % Versions.akkaHttp,
+[error]                         ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:16:20: value %% is not a member of String
+[error]     "org.tpolecat" %% "doobie-core" % "0.5.0-M13",
+[error]                    ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:17:13: value % is not a member of String
+[error]     "mysql" % "mysql-connector-java" % "8.0.33",
+[error]             ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:18:24: value %% is not a member of String
+[error]     "com.github.scopt" %% "scopt" % "3.7.0", // Command Line Commands such as de DbTablesCreator
+[error]                        ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:19:21: value %% is not a member of String
+[error]     "com.newmotion" %% "akka-rabbitmq" % "5.0.0",
+[error]                     ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:20:22: value % is not a member of String
+[error]     "ch.qos.logback" % "logback-classic" % "1.2.3", // Logging backend implementation
+[error]                      ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:21:34: value %% is not a member of String
+[error]     "com.typesafe.scala-logging" %% "scala-logging" % "3.7.2", // SLF4J Scala wrapper
+[error]                                  ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:22:28: value % is not a member of String
+[error]     "net.logstash.logback" % "logstash-logback-encoder" % "4.11", // Log JSON encoder
+[error]                            ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:24:26: value %% is not a member of String
+[error]     "com.typesafe.slick" %% "slick" % "3.3.3",
+[error]                          ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:25:26: value %% is not a member of String
+[error]     "com.typesafe.slick" %% "slick-hikaricp" % "3.3.3",
+[error]                          ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:26:20: value % is not a member of String
+[error]     "com.typesafe" % "config" % "1.4.1",
+[error]                    ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:31:25: value %% is not a member of String
+[error]     "com.typesafe.play" %% "play-json" % "2.9.4"
+[error]                         ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:35:21: value %% is not a member of String
+[error]     "org.scalatest" %% "scalatest" % "3.0.4" % Test,
+[error]                     ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:35:48: not found: value Test
+[error]     "org.scalatest" %% "scalatest" % "3.0.4" % Test,
+[error]                                                ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:36:21: value %% is not a member of String
+[error]     "org.scalamock" %% "scalamock" % "4.0.0" % Test,
+[error]                     ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:36:48: not found: value Test
+[error]     "org.scalamock" %% "scalamock" % "4.0.0" % Test,
+[error]                                                ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:37:25: value %% is not a member of String
+[error]     "com.typesafe.akka" %% "akka-testkit" % Versions.akka % Test,
+[error]                         ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:37:61: not found: value Test
+[error]     "com.typesafe.akka" %% "akka-testkit" % Versions.akka % Test,
+[error]                                                             ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:38:25: value %% is not a member of String
+[error]     "com.typesafe.akka" %% "akka-http-testkit" % Versions.akkaHttp % Test
+[error]                         ^
+[error] /home/estebanfioritti/Documents/api_base/project/Dependencies.scala:38:70: not found: value Test
+[error]     "com.typesafe.akka" %% "akka-http-testkit" % Versions.akkaHttp % Test
+[error]                                                                      ^
+[error] 25 errors found
