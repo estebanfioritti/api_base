@@ -5,7 +5,7 @@ Configuration.settings
 libraryDependencies ++= Dependencies.production
 libraryDependencies ++= Dependencies.test
 
-ThisBuild / scalaVersion := "2.13.12"
+ThisBuild / scalaVersion := "2.13.8"
 
 lazy val root = (project in file("."))
   .settings(

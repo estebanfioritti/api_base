@@ -1,12 +1,12 @@
 package scala.api.entry_point
 
-import scala.api.entry_point.controller.movcta.MovCtaController
-import scala.api.module.movcta.infraestructure.dependency_injection.MovCtaModuleDependencyContainer
+import scala.api.entry_point.controller.saldo_corredor.SaldoCorredorController
+import scala.api.module.movcta.infraestructure.dependency_injection.SaldoModuleDependencyContainer
 
 final class EntryPointDependencyContainer(
-                                           movCtaDeudorDepencies: MovCtaModuleDependencyContainer
+                                           depencies: SaldoModuleDependencyContainer
                                          ) {
 
-  val movCtaController = new MovCtaController(movCtaDeudorDepencies.movctaSearcher)
+  val saldoCorredorController = new SaldoCorredorController(depencies.saldoCorredorSearcher)
 
 }

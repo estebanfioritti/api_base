@@ -6,7 +6,7 @@ import api.module.shared.infraestructure.config.DbConfig
 import com.typesafe.config.ConfigFactory
 
 import scala.api.entry_point.{EntryPointDependencyContainer, Routes}
-import scala.api.module.movcta.infraestructure.dependency_injection.MovCtaModuleDependencyContainer
+import scala.api.module.movcta.infraestructure.dependency_injection.SaldoModuleDependencyContainer
 import scala.api.module.shared.infraestructure.dependency_injection.SharedModuleDependencyContainer
 import scala.concurrent.ExecutionContext
 import scala.io.StdIn
@@ -30,7 +30,7 @@ object ScalaHttpApi {
     implicit val executionContext: ExecutionContext = sharedDependencies.executionContext
 
     val container = new EntryPointDependencyContainer(
-      new MovCtaModuleDependencyContainer(sharedDependencies.doobieDbConnection)
+      new SaldoModuleDependencyContainer(sharedDependencies.doobieDbConnection)
     )
 
     val routes: Routes = new Routes(container)

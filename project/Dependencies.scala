@@ -8,33 +8,32 @@ object Dependencies {
   }
 
   val production: Seq[ModuleID] = Seq(
-    "com.github.nscala-time" %% "nscala-time" % "2.18.0",
-    "com.lihaoyi" %% "pprint" % "0.5.3",
+    "com.github.nscala-time" %% "nscala-time" % "2.24.0",
+    "com.lihaoyi" %% "pprint" % "0.5.9",
     "com.typesafe.akka" %% "akka-http" % Versions.akkaHttp,
     "com.typesafe.akka" %% "akka-actor" % Versions.akka,
     "com.typesafe.akka" %% "akka-stream" % Versions.akka, // Explicit dependency due to: https://bit.ly/akka-http-25
     "com.typesafe.akka" %% "akka-http-spray-json" % Versions.akkaHttp,
-    "org.tpolecat" %% "doobie-core" % "0.5.0-M13",
-    "mysql" % "mysql-connector-java" % "8.0.33",
-    "com.github.scopt" %% "scopt" % "3.7.0", // Command Line Commands such as de DbTablesCreator
-    "com.newmotion" %% "akka-rabbitmq" % "5.0.0",
+    "org.tpolecat" %% "doobie-core" % "1.0.0-RC1",
+    "org.tpolecat" %% "doobie-hikari" % "1.0.0-RC1",
+    "org.tpolecat" %% "doobie-quill" % "1.0.0-RC1",
+    "mysql" % "mysql-connector-java" % "8.0.33", // conector MySQL
+    "de.heikoseeberger" %% "akka-http-circe" % "1.39.2",
+    "io.circe" %% "circe-generic" % "0.14.5",  // Para derivar automáticamente los codecs
+    "io.circe" %% "circe-parser" % "0.14.5",
+  //    Cierro
+//    "com.github.scopt" %% "scopt" % "3.7.0", // Command Line Commands such as de DbTablesCreator
+//    "com.newmotion" %% "akka-rabbitmq" % "5.0.0",
     "ch.qos.logback" % "logback-classic" % "1.2.3", // Logging backend implementation
-    "com.typesafe.scala-logging" %% "scala-logging" % "3.7.2", // SLF4J Scala wrapper
+    "com.typesafe.scala-logging" %% "scala-logging" % "3.9.4", // SLF4J Scala wrapper
     "net.logstash.logback" % "logstash-logback-encoder" % "4.11", // Log JSON encoder
     //    Agregados de prueba
-    "com.typesafe.slick" %% "slick" % "3.3.3",
-    "com.typesafe.slick" %% "slick-hikaricp" % "3.3.3",
-    "com.typesafe" % "config" % "1.4.1",
-    //    "io.circe" %% "circe-core" % "3.2.1",
-    //    "io.circe" %% "circe-generic" % "3.2.1",
-    //    "io.circe" %% "circe-parser" % "3.2.1",
-    //    "de.heikoseeberger" %% "akka-http-circe" % "1.37.0",
-    "com.typesafe.play" %% "play-json" % "2.9.4"
+    "com.typesafe" % "config" % "1.4.1"
   )
 
   val test: Seq[ModuleID] = Seq(
-    "org.scalatest" %% "scalatest" % "3.0.4" % Test,
-    "org.scalamock" %% "scalamock" % "4.0.0" % Test,
+    "org.scalatest" %% "scalatest" % "3.2.16" % Test,
+    "org.scalamock" %% "scalamock" % "5.2.0" % Test,
     "com.typesafe.akka" %% "akka-testkit" % Versions.akka % Test,
     "com.typesafe.akka" %% "akka-http-testkit" % Versions.akkaHttp % Test
   )
