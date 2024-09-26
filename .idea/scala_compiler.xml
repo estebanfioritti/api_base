@@ -14,27 +14,8 @@
         <parameter value="-encoding" />
         <parameter value="utf-8" />
         <parameter value="-Xcheckinit" />
-        <parameter value="-Xfatal-warnings" />
         <parameter value="-Xfuture" />
-        <parameter value="-Xlint:adapted-args" />
-        <parameter value="-Xlint:by-name-right-associative" />
-        <parameter value="-Xlint:constant" />
-        <parameter value="-Xlint:delayedinit-select" />
-        <parameter value="-Xlint:doc-detached" />
-        <parameter value="-Xlint:inaccessible" />
-        <parameter value="-Xlint:infer-any" />
-        <parameter value="-Xlint:missing-interpolator" />
-        <parameter value="-Xlint:nullary-override" />
-        <parameter value="-Xlint:nullary-unit" />
-        <parameter value="-Xlint:option-implicit" />
-        <parameter value="-Xlint:package-object-classes" />
-        <parameter value="-Xlint:poly-implicit-overload" />
-        <parameter value="-Xlint:private-shadow" />
-        <parameter value="-Xlint:stars-align" />
-        <parameter value="-Xlint:type-parameter-shadow" />
-        <parameter value="-Xlint:unsound-match" />
-        <parameter value="-Yno-adapted-args" />
-        <parameter value="-Ypartial-unification" />
+        <parameter value="-Xlint" />
       </parameters>
     </profile>
   </component>
