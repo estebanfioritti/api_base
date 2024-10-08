@@ -1,9 +1,0 @@
-[error] /home/estebanfioritti/IdeaProjects/api_base/project/Configuration.scala:21:34: type mismatch;
-[error]  found   : sbt.Def.Setting[sbt.Task[String]]
-[error]  required: sbt.Def.Setting[_ >: sbt.Task[Option[String]] with sbt.Task[Seq[String]] with String with sbt.File with Boolean with sbt.Task[Seq[sbt.TestOption]]]
-[error]     (which expands to)  sbt.Def.Setting[_ >: sbt.Task[Option[String]] with sbt.Task[Seq[String]] with String with java.io.File with Boolean with sbt.Task[Seq[sbt.TestOption]]]
-[error] Note: sbt.Task[String] <: Any, but class Setting is invariant in type T.
-[error] You may wish to define T as +T instead. (SLS 4.5)
-[error]       assembly / assemblyJarName := s"${name.value}-${(ThisBuild / version).value}.jar",
-[error]                                  ^
-[error] one error found
