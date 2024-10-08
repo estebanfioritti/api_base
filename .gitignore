@@ -1,1 +1,11 @@
 /project/target/
+/project/target/
+/project/target/.sbt-compilation-infos/
+/project/target/config-classes/
+/project/target/scala-2.12/
+/project/target/streams/
+/project/target/
+/project/project/
+target/
+*.tmp
+/.idea/

@@ -13,8 +13,8 @@ final class DoobieMySqlMovCtaRepository(db: DoobieDbConnection)
   def getSaldoCorredor(nroBanca: Int, nroAgencia: Int, nroCorredor: Int): IO[Option[SaldoCorredor]] = {
     db.transactor.use { xa =>
       (
-        Querys.totalImportePorCorredor(nroBanca, nroAgencia, nroCorredor).option.transact(xa), // Obtener saldo
-        Querys.getDataCorredor(nroBanca, nroAgencia, nroCorredor).option.transact(xa) // Obtener DataCorredor
+        Querys.totalImportePorCorredor(nroBanca, nroAgencia, nroCorredor).option.transact(xa),
+        Querys.getDataCorredor(nroBanca, nroAgencia, nroCorredor).option.transact(xa)
       ).parMapN { (maybeSaldo, maybeDataCorredor) =>
         for {
           saldo <- maybeSaldo.flatten

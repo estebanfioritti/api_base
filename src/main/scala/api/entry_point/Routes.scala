@@ -23,8 +23,7 @@ final class Routes(container: EntryPointDependencyContainer) {
     }
 
 
-  val all: Route =
-    saldo
+  val all: Route = saldo
   //  movcta ~
 
   //  private def jsonBody(handler: Map[String, JsValue] => Route): Route =
